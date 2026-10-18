@@ -1,0 +1,106 @@
+section.adminArea {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid #334155;
+}
+
+section.adminArea h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 4px;
+}
+
+.divInput {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.divInputInicialNumber, 
+.divInputFinalNumber {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.divInput p {
+    font-size: 14px;
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+.divInput input[type="number"] {
+    width: 100%;
+    padding: 18px 12px;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+}
+
+.divInput input[type="number"]::-webkit-inner-spin-button,
+.divInput input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.divInput input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.divInput input[type="number"]:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+section.adminArea label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+section.adminArea label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #38bdf8;
+    cursor: pointer;
+}
+
+section.adminArea button#getNumbers {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+}
+
+section.adminArea button#getNumbers:hover {
+    background: linear-gradient(135deg, #0369a1, #075985);
+    transform: translateY(-1px);
+}
+
+section.adminArea button#getNumbers:active {
+    transform: translateY(1px);
+}

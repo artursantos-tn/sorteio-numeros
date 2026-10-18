@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Sorteios | Admin</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/adminArea.css">
+        <link rel="stylesheet" href="css/modalDrawnNumbers.css">
+
+    </head>
+
+    <body class="bodyAdminArea">
+
+        <section class="adminArea">
+
+            <h1>Painel de Controle</h1>
+            
+            <div class="divInput">
+                <div class="divInputInicialNumber">
+                    <p>Número Inicial</p>
+                    <input type="number" name="inputInicialNumber" id="inputInicialNumber">
+                </div>
+
+                <div class="divInputFinalNumber">
+                    <p>Número Final</p>
+                    <input type="number" name="inputFinalNumber" id="inputFinalNumber">
+                </div>
+            </div>
+
+            <label for="checkboxRepeatNumber">
+                <input type="checkbox" name="checkboxRepeatNumber" id="checkboxRepeatNumber">
+                <p>Repetir Números</p>
+            </label>
+
+            <button id="getNumbers">Registrar Números</button>
+
+        </section>
+
+        <section class="modalDrawnNumbers" id="modalDrawnNumbers">
+            <h2>Números Sorteados</h2>
+            <p id="p_numerosSoteados"></p>
+
+            <div class="areaButtonModalDrawnNumbers">
+                <button id="buttonDrawnNumbers">Sortear Número</button>
+                <button id="buttonResetNumbers">Resetar Números</button>
+            </div>
+        </section>
+
+        <script src="js/scriptAdminArea.js"></script>
+        <script src="js/scriptDrawnNumbers.js"></script>
+        
+    </body>
+
+</html>
